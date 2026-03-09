@@ -1,137 +1,162 @@
 <%@ page import="java.util.Date" %>
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Maven Web Application</title>
+<title>Moses Putta | DevOps Engineer</title>
 
-    <style>
+<style>
 
-        body{
-            font-family: Arial, sans-serif;
-            margin:0;
-            background:#f4f6f9;
-        }
+body{
+    margin:0;
+    font-family:Arial;
+    background:#0f172a;
+    color:white;
+}
 
-        header{
-            background:#2c3e50;
-            color:white;
-            padding:20px;
-            text-align:center;
-        }
+header{
+    background:#020617;
+    padding:30px;
+    text-align:center;
+}
 
-        nav{
-            background:#34495e;
-            padding:10px;
-            text-align:center;
-        }
+header h1{
+    color:#22c55e;
+}
 
-        nav a{
-            color:white;
-            text-decoration:none;
-            margin:15px;
-            font-weight:bold;
-        }
+nav{
+    background:#1e293b;
+    padding:15px;
+    text-align:center;
+}
 
-        nav a:hover{
-            color:#1abc9c;
-        }
+nav a{
+    color:white;
+    margin:15px;
+    text-decoration:none;
+    font-weight:bold;
+}
 
-        .container{
-            padding:40px;
-        }
+nav a:hover{
+    color:#22c55e;
+}
 
-        .cards{
-            display:flex;
-            gap:20px;
-        }
+.container{
+    padding:40px;
+}
 
-        .card{
-            background:white;
-            padding:20px;
-            border-radius:8px;
-            box-shadow:0 2px 8px rgba(0,0,0,0.1);
-            width:30%;
-        }
+.section{
+    margin-bottom:40px;
+}
 
-        .card h3{
-            color:#2c3e50;
-        }
+.skills span{
+    background:#22c55e;
+    padding:8px 14px;
+    margin:5px;
+    display:inline-block;
+    border-radius:5px;
+    color:black;
+    font-weight:bold;
+}
 
-        footer{
-            background:#2c3e50;
-            color:white;
-            text-align:center;
-            padding:15px;
-            margin-top:40px;
-        }
+.cards{
+    display:flex;
+    gap:20px;
+}
 
-    </style>
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:8px;
+    width:30%;
+}
 
+footer{
+    background:#020617;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>Welcome to My Maven Web Application</h1>
-    <p>Running on Apache Tomcat</p>
+<h1>Moses Putta</h1>
+<p>DevOps & AWS Engineer | Cloud | Automation | Security</p>
 </header>
 
 <nav>
-    <a href="#">Home</a>
-    <a href="#">Services</a>
-    <a href="#">Projects</a>
-    <a href="#">Contact</a>
+<a href="#">Home</a>
+<a href="#">Skills</a>
+<a href="#">Experience</a>
+<a href="#">Projects</a>
+<a href="#">Contact</a>
 </nav>
 
 <div class="container">
 
-    <h2>Hello Moses 👋</h2>
+<div class="section">
+<h2>About Me</h2>
+<p>
+DevOps Engineer with strong experience in cloud infrastructure, CI/CD automation,
+containerization, and infrastructure as code. Passionate about building scalable,
+secure, and automated systems.
+</p>
 
-    <p>This web application is built using:</p>
+<p><b>Server Time:</b> <%= new Date() %></p>
+</div>
 
-    <ul>
-        <li>Maven</li>
-        <li>Java Servlets</li>
-        <li>JSP</li>
-        <li>Apache Tomcat</li>
-    </ul>
+<div class="section">
+<h2>Technical Skills</h2>
 
-    <p><b>Current Server Time:</b> <%= new Date() %></p>
+<div class="skills">
+<span>AWS</span>
+<span>Terraform</span>
+<span>Docker</span>
+<span>Kubernetes</span>
+<span>Jenkins</span>
+<span>Helm</span>
+<span>ArgoCD</span>
+<span>Git</span>
+<span>Prometheus</span>
+<span>Grafana</span>
+</div>
 
-    <br>
+</div>
 
-    <div class="cards">
+<div class="section">
+<h2>Experience</h2>
 
-        <div class="card">
-            <h3>DevOps</h3>
-            <p>
-                Automate build, test, and deployment using tools like
-                Jenkins, Docker, and Kubernetes.
-            </p>
-        </div>
+<div class="cards">
 
-        <div class="card">
-            <h3>Cloud</h3>
-            <p>
-                Deploy scalable applications on AWS using EC2, S3,
-                Load Balancers, and Auto Scaling.
-            </p>
-        </div>
+<div class="card">
+<h3>Asheer IT Services</h3>
+<p>DevOps & AWS Engineer (L2)</p>
+<p>Working on CI/CD pipelines, Kubernetes deployments, and cloud infrastructure.</p>
+</div>
 
-        <div class="card">
-            <h3>Security</h3>
-            <p>
-                Perform vulnerability assessments and penetration testing
-                to secure applications.
-            </p>
-        </div>
+<div class="card">
+<h3>Rainbow Dental Hospital</h3>
+<p>Operations Manager</p>
+<p>Handled operational management and IT systems.</p>
+</div>
 
-    </div>
+<div class="card">
+<h3>Naresh IT</h3>
+<p>DevOps Mentor</p>
+<p>Mentored students on DevOps tools and cloud technologies.</p>
+</div>
+
+</div>
+
+</div>
 
 </div>
 
 <footer>
-    <p>© 2026 Maven WebApp | Built by Moses</p>
+<p>© 2026 Moses Putta | DevOps Engineer</p>
 </footer>
 
 </body>
