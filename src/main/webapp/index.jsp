@@ -9,23 +9,24 @@
 
 body{
     margin:0;
-    font-family:Arial;
-    background:#0f172a;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0b0f1a;
     color:white;
 }
 
 header{
-    background:#020617;
-    padding:30px;
+    background:linear-gradient(90deg,#4f46e5,#9333ea);
+    padding:40px;
     text-align:center;
 }
 
 header h1{
-    color:#22c55e;
+    margin:0;
+    font-size:40px;
 }
 
 nav{
-    background:#1e293b;
+    background:#111827;
     padding:15px;
     text-align:center;
 }
@@ -38,7 +39,7 @@ nav a{
 }
 
 nav a:hover{
-    color:#22c55e;
+    color:#a78bfa;
 }
 
 .container{
@@ -46,33 +47,38 @@ nav a:hover{
 }
 
 .section{
-    margin-bottom:40px;
+    margin-bottom:50px;
 }
 
 .skills span{
-    background:#22c55e;
-    padding:8px 14px;
-    margin:5px;
+    background:#6366f1;
+    padding:10px 16px;
+    margin:6px;
     display:inline-block;
-    border-radius:5px;
-    color:black;
+    border-radius:6px;
     font-weight:bold;
 }
 
 .cards{
     display:flex;
-    gap:20px;
+    gap:25px;
 }
 
 .card{
-    background:#1e293b;
-    padding:20px;
-    border-radius:8px;
+    background:#1f2937;
+    padding:25px;
+    border-radius:10px;
     width:30%;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    background:#374151;
 }
 
 footer{
-    background:#020617;
+    background:#111827;
     text-align:center;
     padding:20px;
 }
@@ -99,16 +105,19 @@ footer{
 
 <div class="section">
 <h2>About Me</h2>
+
 <p>
-DevOps Engineer with strong experience in cloud infrastructure, CI/CD automation,
-containerization, and infrastructure as code. Passionate about building scalable,
-secure, and automated systems.
+DevOps Engineer experienced in building scalable cloud infrastructure,
+CI/CD pipelines, containerized deployments, and automation using modern
+DevOps tools.
 </p>
 
 <p><b>Server Time:</b> <%= new Date() %></p>
+
 </div>
 
 <div class="section">
+
 <h2>Technical Skills</h2>
 
 <div class="skills">
@@ -127,26 +136,27 @@ secure, and automated systems.
 </div>
 
 <div class="section">
+
 <h2>Experience</h2>
 
 <div class="cards">
 
 <div class="card">
 <h3>Asheer IT Services</h3>
-<p>DevOps & AWS Engineer (L2)</p>
-<p>Working on CI/CD pipelines, Kubernetes deployments, and cloud infrastructure.</p>
+<p><b>DevOps & AWS Engineer (L2)</b></p>
+<p>Working on CI/CD pipelines, Kubernetes deployments, and AWS cloud infrastructure.</p>
 </div>
 
 <div class="card">
 <h3>Rainbow Dental Hospital</h3>
-<p>Operations Manager</p>
-<p>Handled operational management and IT systems.</p>
+<p><b>Operations Manager</b></p>
+<p>Managed operations and handled IT systems and infrastructure.</p>
 </div>
 
 <div class="card">
 <h3>Naresh IT</h3>
-<p>DevOps Mentor</p>
-<p>Mentored students on DevOps tools and cloud technologies.</p>
+<p><b>DevOps Mentor</b></p>
+<p>Guided students in DevOps tools, cloud technologies, and automation.</p>
 </div>
 
 </div>
